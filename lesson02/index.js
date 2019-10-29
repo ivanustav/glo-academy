@@ -15,3 +15,4 @@ console.log(addExpenses.toLocaleLowerCase().split(', '));
 
 let budgetDay = money / 30;
 console.log(budgetDay);
+console.log(money % 30);
