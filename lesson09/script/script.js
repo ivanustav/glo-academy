@@ -142,11 +142,12 @@ let appData = {
                 i--;
             }
         }
+        expensesItems = expensesItemsNew;
 
         if(expensesPlus.style.display == 'none') {
             expensesPlus.style.display='inline-block';
         }
-        
+
         let incomeItemsNew = document.querySelectorAll('.income-items');
         incomeItemsNew[0].querySelector('.income-title').value = '';
         incomeItemsNew[0].querySelector('.income-amount').value = '';
@@ -158,6 +159,7 @@ let appData = {
                 i--;
             }
         }
+        incomeItems = incomeItemsNew;
 
         if(incomePlus.style.display == 'none') {
             incomePlus.style.display='inline-block';
