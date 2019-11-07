@@ -131,35 +131,35 @@ let appData = {
         incomePeriod.value = 0;
         targetMonth.value = '';
 
-        let expensesItemsNew = document.querySelectorAll('.expenses-items');
-        expensesItemsNew[0].querySelector('.expenses-title').value = '';
-        expensesItemsNew[0].querySelector('.expenses-amount').value = '';
+        expensesItems = document.querySelectorAll('.expenses-items');
+        expensesItems[0].querySelector('.expenses-title').value = '';
+        expensesItems[0].querySelector('.expenses-amount').value = '';
 
-        if(expensesItemsNew.length > 1) {
-            let i = expensesItemsNew.length - 1;
+        if(expensesItems.length > 1) {
+            let i = expensesItems.length - 1;
             while(i != 0){
-                expensesItemsNew[i].remove();
+                expensesItems[i].remove();
                 i--;
             }
         }
-        expensesItems = expensesItemsNew;
+        expensesItems = document.querySelectorAll('.expenses-items');
 
         if(expensesPlus.style.display == 'none') {
             expensesPlus.style.display='inline-block';
         }
 
-        let incomeItemsNew = document.querySelectorAll('.income-items');
-        incomeItemsNew[0].querySelector('.income-title').value = '';
-        incomeItemsNew[0].querySelector('.income-amount').value = '';
+        incomeItems = document.querySelectorAll('.income-items');
+        incomeItems[0].querySelector('.income-title').value = '';
+        incomeItems[0].querySelector('.income-amount').value = '';
 
-        if(incomeItemsNew.length > 1) {
-            let i = incomeItemsNew.length - 1;
+        if(incomeItems.length > 1) {
+            let i = incomeItems.length - 1;
             while(i != 0){
-                incomeItemsNew[i].remove();
+                incomeItems[i].remove();
                 i--;
             }
         }
-        incomeItems = incomeItemsNew;
+        incomeItems = document.querySelectorAll('.income-items');
 
         if(incomePlus.style.display == 'none') {
             incomePlus.style.display='inline-block';
